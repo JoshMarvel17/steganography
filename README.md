@@ -10,5 +10,9 @@ The goal of this project is to be able to conceal a hidden message in the RGB va
 
 I was only able to implement the decoding of a image to work.  This function is called retrieval which will retrieve the hidden message in a file.  
 
+To decode an Image:
+
+python proj1.py -d testImage.jpg
+
 references: #this project referenced this youtube tutorial
 #https://www.youtube.com/watch?v=q3eOOMx5qoo&t=600s
