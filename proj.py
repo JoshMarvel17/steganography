@@ -106,24 +106,18 @@ def main():
 	#create a parser
 	parser= optparse.OptionParser('usage %prog ' + '-e/-d <target text>' + '-i/-o <target file>')
 
-	#parser.add_option('-i', dest='hide', type='string', help='target picture path to hide text')
 	
-	parser.add_option('-o', dest='retr', type='string', help='target picture path to retrieve  text')
+	parser.add_option('-d', dest='retr', type='string', help='target picture path to retrieve  text')
 	
-	parser.add_option('-e', dest ='input', type='string', help='text to encrypt')
 	
-	#parser.add_option('-d', dest = 'output', type='string', help='image to decrypt')
+	parser.add_option('-o', dest = 'output', type='string', help='image to decrypt')
 	
 	#parse the arguments
 	(options, args) = parser.parse_args()
 
 	# options 
-	
-	if (options.hide_input != None and options.input != None):
-	
-		print(hide_input(options.hide_input, options.input))
-	
-	elif (options.retr != None and options.output != None):
+
+	if (options.retr != None and options.output != None):
 	
 		print(retr(options.retr))
 	else:
